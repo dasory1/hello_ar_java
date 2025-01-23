@@ -56,12 +56,12 @@ public class CollisionpredictModule {
 
         double tClosest = calculateClosestTime(relativePosition, relativeVelocity);
         double minDistance = calculateMinDistance(relativePosition, relativeVelocity, tClosest);
-        String pos = String.format("(%.2f, %.2f, %.2f)",relativePosition[0],relativePosition[1],relativePosition[2]);
-        String vel = String.format("(%.2f, %.2f, %.2f)",relativeVelocity[0],relativeVelocity[1],relativeVelocity[2]);
-        String cDistance = String.format("%.2f",Math.sqrt(Math.pow(relativePosition[0],2)+Math.pow(relativePosition[1],2)+Math.pow(relativePosition[2],2)));
-        String v = String.format("%.2f",Math.sqrt(Math.pow(relativeVelocity[0],2)+Math.pow(relativeVelocity[1],2)+Math.pow(relativeVelocity[2],2)));
-        //Log.d("predicted","id:"+object.getid()+" "+object.getlabel()+", p:"+pos+ ", v:"+vel+", cDistance:"+cDistance);
-        //Log.d("predicted","id:"+object.getid()+" "+object.getlabel()+", tClosest:"+String.format("%.2f",tClosest)+", mDistance:"+String.format("%.3f",minDistance));
+//        String pos = String.format("(%.2f, %.2f, %.2f)",relativePosition[0],relativePosition[1],relativePosition[2]);
+//        String vel = String.format("(%.2f, %.2f, %.2f)",relativeVelocity[0],relativeVelocity[1],relativeVelocity[2]);
+//        String cDistance = String.format("%.2f",Math.sqrt(Math.pow(relativePosition[0],2)+Math.pow(relativePosition[1],2)+Math.pow(relativePosition[2],2)));
+//        String v = String.format("%.2f",Math.sqrt(Math.pow(relativeVelocity[0],2)+Math.pow(relativeVelocity[1],2)+Math.pow(relativeVelocity[2],2)));
+//        Log.d("predicted","id:"+object.getid()+" "+object.getlabel()+", p:"+pos+ ", v:"+vel+", cDistance:"+cDistance);
+//        Log.d("predicted","id:"+object.getid()+" "+object.getlabel()+", tClosest:"+String.format("%.2f",tClosest)+", mDistance:"+String.format("%.3f",minDistance));
         if (tClosest < 0 || tClosest > set_alarmtime ) {
             return 0; // 충돌 가능성이 없거나 한참 후
         }
