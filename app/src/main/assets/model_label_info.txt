@@ -1,0 +1,2 @@
+efficientdet -> labels
+yolo_v5 -> coco_labels_2014_2017
